@@ -26,7 +26,7 @@ int exactKdifferenceSubsetSum(std::vector<int> arr, int k) {
   int dp[n+1][targetsum+1];
 
   for(int i = 0; i <=n; i++) {
-    for(int j = 0; j <= sum; j++) {
+    for(int j = 0; j <= targetsum; j++) {
 
       if(i == 0 && j != 0) {
         dp[i][j] = 0;
@@ -46,5 +46,5 @@ int exactKdifferenceSubsetSum(std::vector<int> arr, int k) {
       }
     }
   }
-  return dp[n][sum];
+  return dp[n][targetsum];
 }
