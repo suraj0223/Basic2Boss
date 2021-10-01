@@ -1,0 +1,27 @@
+Graph can be represented in two forms
+1. Using adjacency matrix
+2. Using adjacency list
+
+1. Adjacency representaion have lots of anomalies
+  lets take you have 10^5 nodes then if you consider making 10e5 * 10e5
+  matrix you will get memory overflow
+2. Adjacency list:
+  Thats the reason why adjacency list is preferred.
+
+
+in C++
+// n: No of vertex
+vector<int> graph[n];
+graph[0] = [1,2,3,4,5,6,7,8]
+graph[1] = [...]
+graph[2] = [.....]
+. = [...]
+. = [...]
+. = [....]
+
+---------------------------------------------
+IN java:
+make use of list of list
+ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+
+same visualization as C++
