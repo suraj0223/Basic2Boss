@@ -8,7 +8,7 @@
 // method 1
 
 // unbounded knapSack problems means you can have multiple instances of
-// any particular product
+// any particular product.
 
 int knapSack(int W, int wt[], int val[], int n) {
 
