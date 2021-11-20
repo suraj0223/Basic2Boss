@@ -40,7 +40,7 @@ int LCS(string s1, string s2, int n, int m) {
 }
 
 // ------------------------Top down dp -----------------------------------------
-// we say top down because we solve small problem first and then use it for solving larger problems 
+// we say top down because we solve small problem first and then use it for solving larger problems
 // we have to make a 2d top down matrix
 int LCS(string s1, string s2, int n, int m) {
 
@@ -48,7 +48,7 @@ int LCS(string s1, string s2, int n, int m) {
 
   for(int i = 1; i <= n; i++) {
     for(int j = 1; j <= m; j++) {
-        if(s1[i] == s2[j])
+        if(s1[i-1] == s2[j-1])
             dp[i][j] = 1 + dp[i-1][j-1];
         else
             dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
